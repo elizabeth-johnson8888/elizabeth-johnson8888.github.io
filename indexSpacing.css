@@ -1,5 +1,4 @@
-
-header, #aboutMe, #contactMe {
+#aboutMe, #contactMe {
     margin: 0;
     margin-bottom: 4em;
     padding: 1em 2em;
@@ -20,4 +19,11 @@ header h1 {
 
 #aboutMe {
     background-color: aqua;
+}
+
+/* only first div in aboutMe */
+#aboutMe > div {
+    margin: 0;
+    padding: 0;
+    display: flex;
 }

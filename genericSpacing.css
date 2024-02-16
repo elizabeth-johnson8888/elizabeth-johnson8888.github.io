@@ -59,7 +59,18 @@
         left: 1vw;
         top: 30%;
         z-index: 1040;
-        background-color: red;
+    }
+
+    #contact img {
+        margin: .5em;
+    }
+
+    header {
+        margin: 0;
+        margin-bottom: 4em;
+        padding: 1em 2em;
+        border-radius: 2em;
+        background-color: aqua;
     }
 
     /* position main body of all pages*/

@@ -1,0 +1,11 @@
+main ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+main li {
+    margin: 0 .5em;
+}
