@@ -1,0 +1,26 @@
+:root {
+    --dark:#092336;
+    --main-dark:#0B2A40;
+    --large-text:#715892;
+    --small-text:#AA99C1;
+}
+
+body {
+    background-color: var(--main-dark);
+}
+
+#navigation, footer {
+    background-color: var(--dark);
+}
+
+h1, h2, h3 {
+    color: var(--small-text)
+}
+
+p, a, li, hr {
+    color: var(--small-text)
+}
+
+#projects-nav a, #contactMe a {
+    background-color: var(--dark);
+}

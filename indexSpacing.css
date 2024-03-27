@@ -1,0 +1,107 @@
+
+/* -HEADER---------------------- */
+header {
+    padding: 1em, 2em;
+}
+
+header div, header p {
+    padding: 0;
+    margin: 0;
+}
+
+header div p {
+    position: relative;
+    right: -2em;
+}
+
+header h3 {
+    position: relative;
+    left: 1em;
+}
+
+header h1 {
+    margin: 0;
+    margin-bottom: .5em;
+}
+
+/* -PROJECTS------------------- */
+#projects-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+#projects-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+#projects-list li {
+    margin: 0em 2em;
+}
+
+/* #contactMe div {
+    display: flex;
+    flex-direction: column;
+} */
+
+#projects-list a, #contactMe a {
+    margin:0;
+    padding: .5em 1em;
+    /* border: solid 2pt; */
+    border-radius: 10px;
+}
+
+#aboutMe, #contactMe, #projects {
+    margin: 0;
+    padding: 1em 2em;
+    border-radius: 2em;
+}
+
+#aboutMe figure {
+    float: right;
+    margin: 3em;
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+}
+
+#skills {
+    position: relative;
+    top: 1em;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contactMe p {
+    padding-right: 1em;
+}
+
+#mail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#mail-container a {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+@media (min-width: 1100px) {
+    #aboutMe figure {
+        margin: 0 5em;
+    }
+
+    #aboutMe p {
+        padding-right: 3em;
+    }
+}
