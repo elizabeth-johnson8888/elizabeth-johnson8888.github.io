@@ -13,7 +13,7 @@ body {
     background-color: var(--dark);
 }
 
-h1, h2, h3 {
+h1, h2, h3, .page-link {
     color: var(--small-text)
 }
 
@@ -21,6 +21,10 @@ p, a, li, hr {
     color: var(--small-text)
 }
 
-#projects-nav a, #contactMe a {
+#projects-nav a, #contactMe a, .card, .page-link {
     background-color: var(--dark);
+}
+
+.page-link {
+    border-color: var(--dark)
 }

@@ -50,6 +50,13 @@ header h1 {
     flex-direction: column;
 } */
 
+#project-navigation {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: red;
+}
+
 #projects-list a, #contactMe a {
     margin:0;
     padding: .5em 1em;
