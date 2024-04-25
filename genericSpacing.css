@@ -109,6 +109,7 @@
     h2 {
         position: relative;
         bottom: 1vh;
+        font-size: 40px;
     }
 
     p, #projects-list a, li, #contactMe a {
@@ -126,6 +127,6 @@
     }
 
     h2 {
-        font-size: xx-large;
+        font-size: 50px;
     }
 }

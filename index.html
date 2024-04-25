@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="genericSpacing.css">
     <link rel="stylesheet" href="indexSpacing.css">
     <link rel="stylesheet" href="colors.css">
+    <script src="projects.js"></script>
     <title>Elizabeth Johnson</title>
   </head>
 
@@ -72,6 +73,9 @@
                     <li>
                         <a href="#">Art</a>
                     </li>
+                    <li>
+                        <a href="#">All</a>
+                    </li>
                 </ul>
             </div>
             <hr>
@@ -82,12 +86,18 @@
                 <!-- the programming cards will be the titles,texts,and links -->
                 <!-- the art cards will have a picture of the project -->
                 <div class="row">
-                    <div class="col card m-5" style="width: 18rem;">
+                    <div class="col card m-5 btn" style="width: 18rem;" data-toggle="collapse" data-target="#projectName" aria-expanded="false" aria-controls="projectName">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
+                    <div class="collapse" id="projectName">
+                        <div class="card card body">
+                            More Art Description about the specific project
+                        </div>
+                    </div>
+
                     <div class="col card m-5" style="width: 18rem;">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
