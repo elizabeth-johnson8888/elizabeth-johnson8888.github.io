@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="genericSpacing.css">
-    <link rel="stylesheet" href="indexSpacing.css">
-    <link rel="stylesheet" href="colors.css">
+    <link rel="stylesheet" href="css/genericSpacing.css">
+    <link rel="stylesheet" href="css/indexSpacing.css">
+    <link rel="stylesheet" href="css/colors.css">
     <script src="projects.js"></script>
     <title>Elizabeth Johnson</title>
   </head>
@@ -28,7 +28,7 @@
                 <a href="#contactMe">Contact</a>
             </li>
             <li>
-                <a href="resume2.pdf">Resume</a>
+                <a href="resources/resume2.pdf">Resume</a>
             </li>
         </ul>
     </div>
@@ -36,10 +36,10 @@
     <div id="contact" class="contact">
         <!-- github, linkedin, email -->
         <a href="https://www.linkedin.com/in/elizabeth-johnson8888/">
-            <img src="linkedin.png" width="40" height="40">
+            <img src="resources/images/linkedin.png" width="40" height="40">
         </a>
         <a href="https://github.com/elizabeth-johnson8888?tab=repositories">
-            <img src="github.png" width="40" height="40">
+            <img src="resources/images/github.png" width="40" height="40">
         </a>
         <!-- <a href="mailto:johnsonel8888@gmail.com">
             <img src="mail.png" width="40" height="40">
@@ -85,14 +85,45 @@
                 <!-- use javascript to form the cards when each button is pressed -->
                 <!-- the programming cards will be the titles,texts,and links -->
                 <!-- the art cards will have a picture of the project -->
-                <div class="row">
-                    <div class="col card m-5 btn" style="width: 18rem;" data-toggle="collapse" data-target="#projectName" aria-expanded="false" aria-controls="projectName">
+                <div id="first-row" class="row">
+                    <!-- <div class="col card m-5 btn" style="width: 18rem;" data-bs-toggle="collapse" data-bs-target="#projectName" aria-expanded="false" aria-controls="projectName">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
+                    <div class="col card m-5" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    <div class="col card m-5" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                        </div>
+                    </div> -->
+                </div>
+                <!-- <div class="row collapse" id="projectName">
+                    <div class="col card card-body">
+                        More Art Description about the specific project
+                    </div>
+                </div> -->
+
+                <div id="second-row" class="row">
                     <!-- <div class="col card m-5" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                    <div class="col card m-5" style="width: 18rem;">
                         <img src="..." class="card-img-top" alt="...">
                         <div class="card-body">
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -107,38 +138,6 @@
                           <a href="#" class="card-link">Another link</a>
                         </div>
                     </div> -->
-                </div>
-                <div class="row collapse" id="projectName">
-                    <div class="col card card-body">
-                        More Art Description about the specific project
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col card m-5" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                    <div class="col card m-5" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                    </div>
-                    <div class="col card m-5" style="width: 18rem;">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Page navigation -->
@@ -169,7 +168,7 @@
             <div>
                 <!-- headshot -->
                 <figure>
-                    <img src="Headshot.jpg" width="370" height="463">
+                    <img src="resources/images/Headshot.jpg" width="370" height="463">
                     <figcaption><a href="https://emilybphoto.net/">Emily Bartell Photography</a></figcaption>
                 </figure>
                 <!-- link skills to specific projects -->
@@ -223,10 +222,10 @@
         <div class="contact">
             <!-- github, linkedin, email -->
             <a href="https://www.linkedin.com/in/elizabeth-johnson8888/">
-                <img src="linkedin.png" width="30" height="30">
+                <img src="resrouces/images/linkedin.png" width="30" height="30">
             </a>
             <a href="https://github.com/elizabeth-johnson8888?tab=repositories">
-                <img src="github.png" width="30" height="30">
+                <img src="resources/images/github.png" width="30" height="30">
             </a>
             <!-- <a href="mailto:johnsonel8888@gmail.com">
                 <img src="mail.png" width="30" height="30">

@@ -1,0 +1,92 @@
+[
+    {
+        "type":"art",
+        "project-id":"id",
+        "card-image":"image link",
+        "card-description":"Hand-sewed and beaded lampshade",
+        "collapse-images": ["image link", "image link"],
+        "collapse-description":"More Art Description about the specific project"
+    },
+    {
+        "type":"art",
+        "project-id":"id",
+        "card-image":"image link",
+        "card-description":"Hand-sewed and beaded lampshade",
+        "collapse-images": ["image link", "image link"],
+        "collapse-description":"More Art Description about the specific project"
+    },
+    {
+        "type":"programming",
+        "card-title":"card titleeee",
+        "card-subtitle":"programming languages used",
+        "project-description":"yuh yuh yuh projectsss",
+        "project-link":"github link to projects"
+    },
+    {
+        "type":"programming",
+        "card-title":"card titleeee",
+        "card-subtitle":"programming languages used",
+        "project-description":"yuh yuh yuh projectsss",
+        "project-link":"github link to projects"
+    },
+    {
+        "type":"programming",
+        "card-title":"card titleeee",
+        "card-subtitle":"programming languages used",
+        "project-description":"yuh yuh yuh projectsss",
+        "project-link":"github link to projects"
+    },
+    {
+        "type":"art",
+        "project-id":"id",
+        "card-image":"image link",
+        "card-description":"Hand-sewed and beaded lampshade",
+        "collapse-images": ["image link", "image link"],
+        "collapse-description":"More Art Description about the specific project"
+    },
+    {
+        "type":"art",
+        "project-id":"id",
+        "card-image":"image link",
+        "card-description":"Hand-sewed and beaded lampshade",
+        "collapse-images": ["image link", "image link"],
+        "collapse-description":"More Art Description about the specific project"
+    },
+    {
+        "type":"art",
+        "project-id":"id",
+        "card-image":"image link",
+        "card-description":"Hand-sewed and beaded lampshade",
+        "collapse-images": ["image link", "image link"],
+        "collapse-description":"More Art Description about the specific project"
+    },
+    {
+        "type":"programming",
+        "card-title":"card titleeee",
+        "card-subtitle":"programming languages used",
+        "project-description":"yuh yuh yuh projectsss",
+        "project-link":"github link to projects"
+    },
+    {
+        "type":"programming",
+        "card-title":"card titleeee",
+        "card-subtitle":"programming languages used",
+        "project-description":"yuh yuh yuh projectsss",
+        "project-link":"github link to projects"
+    },
+    {
+        "type":"programming",
+        "card-title":"card titleeee",
+        "card-subtitle":"programming languages used",
+        "project-description":"yuh yuh yuh projectsss",
+        "project-link":"github link to projects"
+    },
+    {
+        "type":"art",
+        "project-id":"id",
+        "card-image":"image link",
+        "card-description":"Hand-sewed and beaded lampshade",
+        "collapse-images": ["image link", "image link"],
+        "collapse-description":"More Art Description about the specific project"
+    }
+]
