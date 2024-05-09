@@ -20,7 +20,6 @@
         "project-id":"rocket-backtracking",
         "card-title":"Rocket Backtracking",
         "card-subtitle":"Python",
-        "card-text":"Click Me!",
         "project-description":"Practice for backtracking algorithm through practical application. The problem is a variation of the classic knapsack problem. In this variation, the task was to build a rocket using the fewest possible sections, where each section is variable length. My approach to the problem was to add up sections until they are equal to the desired total, continuously evaluating the number of sections.",
         "project-link":"https://github.com/elizabeth-johnson8888/RocketBacktracking.git"
     },
@@ -29,7 +28,6 @@
         "project-id":"bullet-journal",
         "card-title":"Bullet Journal Website",
         "card-subtitle":"HTML, CSS, JavaScript, Bootstrap",
-        "card-text":"Click Me!",
         "project-description":"Bullet Journals are a type of journal that people make for personal notes, goals, calendars, budgets and more. Usually they are decorated very cutely, but they are time consuming to make. I made a web application that simulates a bullet journal where users can log in and make notes and use a dynamically created calendar. I used IndexedDB and sessionStorage to hold information about the users and their saved notes. Since it is a bullet journal, I created a jason file with different themes that users can save for each month of the calendar so if you save a christmas theme for December, December of that year will always be christmas themed regardless of the themes from other months. This project was completed for a Web Application class at James Madison University.",
         "project-link":"https://w3stu.cs.jmu.edu/johns5el/cs343/Project/"
     },
@@ -38,7 +36,6 @@
         "project-id":"max3sat",
         "card-title":"Max3Sat Exact Solution",
         "card-subtitle":"Python, Shell script",
-        "card-text":"Click Me!",
         "project-description":"Max3Sat is a classic NP-complete problem within the realm of computational complexity. The objective of Max3Sat is to obtain the maximum count of clauses that yield a true evaluation. Each clause is written in CNF notation and each variable can be affirmed or negated. In my problem, I was given the number of variables, the number of clauses in one line, and each clause on separate input lines. Using the Brute Force algorithm, I explored all possible truth assignments for each variable and evaluated the expression. Following each evaluation, I compared the previous maximum truth count with the evaluated truth count to get the maximum number of true clauses. The algorithm prints the maximum number of clauses that are evaluated to true and the truth values that are associated with each variable. Consequently, this algorithm operates in exponential time.",
         "project-link":"https://github.com/elizabeth-johnson8888/Max3Sat.git"
     },
@@ -71,7 +68,6 @@
         "project-id":"homebase-application",
         "card-title":"HomeBase GUI Application",
         "card-subtitle":"Java Swing",
-        "card-text":"Click Me!",
         "project-description":"The HomeBase application was completed for a Developing Multimedia course at James madison University. It is a gui application that shows different home viewings for the counties of Rockingham and Augusta. The some of the visual content was sampled, and some was created using Java graphics.",
         "project-link":"https://github.com/elizabeth-johnson8888/HomeBase-Application.git"
     },
@@ -80,7 +76,6 @@
         "project-id":"circular-binary",
         "card-title":"Circular Binary Search",
         "card-subtitle":"Python",
-        "card-text":"Click Me!",
         "project-description":"This algorithm objective was to do a binary search on a circulary sorted array.",
         "project-link":"https://github.com/elizabeth-johnson8888/CircularBinarySearch.git"
     },
@@ -89,7 +84,6 @@
         "project-id":"min-heap",
         "card-title":"Minimum Heap lab",
         "card-subtitle":"java",
-        "card-text":"Click Me!",
         "project-description":"This was a lab completed for a Data Structures Course at James Madison University. The objective was to create a wroking minimum heap from scratch to better undertsnad the mechanics behind the data structure.",
         "project-link":"https://github.com/elizabeth-johnson8888/DataStructures/tree/main/MinHeap"
     },

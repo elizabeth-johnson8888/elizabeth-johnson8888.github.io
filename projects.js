@@ -75,8 +75,6 @@ function createProgrammingCard(cardinfo)
     let cardhtml =
         '<div class="card-body">' + '<h3 class="card-title">' + cardinfo["card-title"] + '</h3>'
         + '<h5 class="card-subtitle mb-2 text-body-secondary">' + cardinfo["card-subtitle"] + '</h5>'
-=======
->>>>>>> refs/remotes/origin/main
         + '</div>';
     cardContainer.innerHTML = cardhtml;
 
@@ -143,7 +141,6 @@ function setPaginationForward()
     if (isArt && isProgramming)
         {
             projectArray = projectMaster;
-            console.log(projectArray);
         }
     else if (isArt)
         {
@@ -198,7 +195,6 @@ function setPaginationBackward()
     if (isArt && isProgramming)
         {
             projectArray = projectMaster;
-            console.log(projectArray);
         }
     else if (isArt)
         {
@@ -245,17 +241,104 @@ function setPaginationBackward()
 // function that changes the pagination to art projects
 function setArtProjects()
 {
+    isArt = true;
+    isProgramming = false;
     // reset current index for art array
     currentIndex = 0;
+    curr = 0;
+
+    // remove children from first and second row
+    let firstRow = document.querySelector("#first-row");
+    let secondRow = document.querySelector("#second-row");
+    while (firstRow.firstChild && secondRow.firstChild)
+        {
+            firstRow.removeChild(firstRow.firstChild);
+            secondRow.removeChild(secondRow.firstChild);
+        }
 
     // set base art projects
+    for (let i = curr; i < artMaster.length; i++)
+        {
+            // add the first three cards to the first row
+            if (i < curr + 3)
+            {
+                document.querySelector("#first-row").appendChild(artMaster[i][0]);
+                document.querySelector("#first-row").after(artMaster[i][1]);
+            }
+            // add the second three cards to the second row
+            else if (i < curr + 6)
+            {
+                document.querySelector("#second-row").appendChild(artMaster[i][0]);
+                document.querySelector("#second-row").after(artMaster[i][1]);
+            }
+        }
 }
 
 // function that changes pagination to cs projects
 function setProgrammingProjects()
 {
+    isArt = false;
+    isProgramming = true;
     // reset current index for programming array
     currentIndex = 0;
 
+    // remove children from first and second row
+    let firstRow = document.querySelector("#first-row");
+    let secondRow = document.querySelector("#second-row");
+    while (firstRow.firstChild && secondRow.firstChild)
+        {
+            firstRow.removeChild(firstRow.firstChild);
+            secondRow.removeChild(secondRow.firstChild);
+        }
+    let curr = 0;
     // set base programming projects
+    for (let i = curr; i < programmingMaster.length; i++)
+        {
+            // add the first three cards to the first row
+            if (i < curr + 3)
+            {
+                document.querySelector("#first-row").appendChild(programmingMaster[i][0]);
+                document.querySelector("#first-row").after(programmingMaster[i][1]);
+            }
+            // add the second three cards to the second row
+            else if (i < curr + 6)
+            {
+                document.querySelector("#second-row").appendChild(programmingMaster[i][0]);
+                document.querySelector("#second-row").after(programmingMaster[i][1]);
+            }
+        }
+}
+
+function setAllProjects()
+{
+    isArt = true;
+    isProgramming = true;
+    // remove children from first and second row
+    let firstRow = document.querySelector("#first-row");
+    let secondRow = document.querySelector("#second-row");
+    while (firstRow.firstChild && secondRow.firstChild)
+        {
+            firstRow.removeChild(firstRow.firstChild);
+            secondRow.removeChild(secondRow.firstChild);
+        }
+
+    let curr = 0;
+    // set base programming projects
+    for (let i = curr; i < programmingMaster.length; i++)
+        {
+            // add the first three cards to the first row
+            if (i < curr + 3)
+            {
+                document.querySelector("#first-row").appendChild(programmingMaster[i][0]);
+                document.querySelector("#first-row").after(programmingMaster[i][1]);
+            }
+            // add the second three cards to the second row
+            else if (i < curr + 6)
+            {
+                document.querySelector("#second-row").appendChild(programmingMaster[i][0]);
+                document.querySelector("#second-row").after(programmingMaster[i][1]);
+            }
+        }
+
+    currentIndex = 6;
 }
