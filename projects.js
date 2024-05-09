@@ -75,7 +75,6 @@ function createProgrammingCard(cardinfo)
     let cardhtml =
         '<div class="card-body">' + '<h3 class="card-title">' + cardinfo["card-title"] + '</h3>'
         + '<h5 class="card-subtitle mb-2 text-body-secondary">' + cardinfo["card-subtitle"] + '</h5>'
-        + '<p class="card-text">' + cardinfo['card-text'] + '</p>'
         + '</div>';
     cardContainer.innerHTML = cardhtml;
 
