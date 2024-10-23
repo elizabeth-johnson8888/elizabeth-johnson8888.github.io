@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Elizabeth Johnson">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="projects.js"></script>
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/spacing.css">
+    <title>Elizabeth Johnson</title>
+  </head>
+
+  <body>
+    <!-- this div represents the navbar, picture on the left things listed on the right -->
+    <div id="navigation">
+        <img width="30" height="30">
+        <ul>
+            <li>
+                <a href="#aboutMe">About Me</a>
+            </li>
+            <li>
+                <a href="#Projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contactMe">Contact</a>
+            </li>
+            <li>
+                <a href="resources/resume2.pdf">Resume</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="contact" class="contact">
+        <!-- github, linkedin, email -->
+        <a href="https://www.linkedin.com/in/elizabeth-johnson8888/">
+            <img src="resources/images/linkedin.png">
+            <!-- <img src="resources/images/linkedin.png" width="40" height="40"> -->
+        </a>
+        <a href="https://github.com/elizabeth-johnson8888?tab=repositories">
+            <!-- <img src="resources/images/github.png" width="40" height="40"> -->
+            <img src="resources/images/github.png">
+        </a>
+        <!-- <a href="mailto:johnsonel8888@gmail.com">
+            <img src="mail.png" width="40" height="40">
+        </a> -->
+    </div>
+
+    <!-- main body of page-->
+    <main>
+
+        <!-- header -->
+        <header>
+            <div>
+                <h3>Hello, my name is </p>
+                <h1><strong>Elizabeth Johnson</strong></h1>
+            </div>
+            <p>I am a graduate from James Madison University Spring 2024. I am currently looking for job opportunities! I am a creative individual who loves to collaborate on projects and work creatively.</p>
+        </header>
+
+
+        <!-- Projects -->
+        <div id="projects">
+            <hr>
+            <div id="projects-nav">
+                <h2>Projects</h1>
+                <!-- container for choosing the types of projects to look at -->
+                <ul id="projects-list">
+                    <!-- MAKE THESE DROPDOWN BUTTONS -->
+                    <li>
+                        <a href="#" onclick="setProgrammingProjects()">Programming</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="setArtProjects()">Art</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="setAllProjects()">All</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- container for holding projects that generate with javascript -->
+            <!-- originally holds all of the projects from most recent at the top -->
+            <div class="projects-list container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <button class="col card btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-explanded="false" aria-controls="collapseExample" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                            </div>
+                        </button>
+                        <button class="col card btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-explanded="false" aria-controls="collapseExample" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                            </div>
+                        </button>
+                        <button class="col card btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-explanded="false" aria-controls="collapseExample" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                            </div>
+                        </button>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                <!-- use javascript to form the cards when each button is pressed -->
+                <!-- the programming cards will be the titles,texts,and links -->
+                <!-- the art cards will have a picture of the project -->
+                <!-- <div id="first-row" class="row">
+                </div>
+                <div id="second-row" class="row">
+                </div> -->
+
+                <!-- Page navigation -->
+                <nav id="project-navigation">
+                    <ul class="pagination">
+                      <li id="previous-page-item" class="page-item">
+                        <a id="pagination-backward" class="page-link" href="#" aria-label="Previous" onclick="setPaginationBackward()">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li id="next-page-item" class="page-item">
+                        <a id="pagination-forward" class="page-link" href="#" aria-label="Next" onclick="setPaginationForward()">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- about me container -->
+        <div id="aboutMe">
+            <h2>About Me</h2>
+            <div class="aboutMeDiv">
+                <!-- headshot -->
+                <figure>
+                    <img src="resources/images/Headshot.jpg">
+                    <!-- <img src="resources/images/Headshot.jpg" width="370" height="463"> -->
+                    <figcaption><a href="https://emilybphoto.net/">Emily Bartell Photography</a></figcaption>
+                </figure>
+                <!-- link skills to specific projects -->
+                <p>I am interested in application development, game design/software, web development, and other areas where I could apply my creativity. In my free time I enjoy completing art projects such as painting, lampshade making, crotcheting, and other various art forms. I love learning new techniques and experimenting with my art and computer science projects, plus it helps to gain new perspectives of my projects. Some other things I like to do in my free time is listening to music, hiking, and hanging out with friends.</p>
+                <div id="skills">
+                    <div>
+                        <h3>Hard Skills:</h3>
+                        <ul>
+                            <li>C</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Soft Skills:</h3>
+                        <ul>
+                            <li>Communication skills</li>
+                            <li>Open minded</li>
+                            <li>Creative</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr>
+        </div>
+        <!-- contact me container -->
+        <div id="contactMe">
+            <h2>Contact Me!</h2>
+            <div>
+                <p>I am currently looking for job opportunities! I'd love to hear from you to speak about career possibilities! Additionally my inbox is always open for questions or just to say hi! I will do my best to get back to you as soon as I can!</p>
+                <!-- <div id="mail-container">
+                    <a href="mailto:johnsonel8888@gmail.com">Email Me</a>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <!-- footer with contact information -->
+    <footer>
+        <div id="info">
+            <p>Designed and Programmed by Elizabeth L. Johnson</p>
+            <!-- date updates to last time the website was updated -->
+            <p>Last Updated: 4/5/2024</p>
+        </div>
+        <!-- container for holding contact methods that stays on page pernamentally -->
+        <div class="contact">
+            <!-- github, linkedin, email -->
+            <a href="https://www.linkedin.com/in/elizabeth-johnson8888/">
+                <img src="resources/images/linkedin.png" width="30" height="30">
+            </a>
+            <a href="https://github.com/elizabeth-johnson8888?tab=repositories">
+                <img src="resources/images/github.png" width="30" height="30">
+            </a>
+            <!-- <a href="mailto:johnsonel8888@gmail.com">
+                <img src="mail.png" width="30" height="30">
+            </a> -->
+        </div>
+    </footer>
+  </body>
+</html>

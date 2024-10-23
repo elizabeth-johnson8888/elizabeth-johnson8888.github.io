@@ -1,0 +1,278 @@
+/* // Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) { */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* ----------------------------------------- */
+    /* ----------------navbar------------------- */
+    /* ----------------------------------------- */
+    #navigation {
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #navigation ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #navigation li {
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        justify-content: center;
+        align-content:center; 
+    }
+
+    #navigation a {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ----------------------------------------- */
+    /* ----------------contact------------------- */
+    /* ----------------------------------------- */
+    #contact {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        right: 1%;
+    }
+
+    #contact a {
+        margin: 1em;
+        padding: 0em;
+    }
+
+    #contact img {
+        height: 40px;
+        width: 40px;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------main-body-of-page------------- */
+    /* ----------------------------------------- */
+    main {
+        margin-top: 1em;
+        margin-left: 3em;
+        margin-right: 3em;
+        margin-bottom: 3em;
+        padding: 0;
+        padding-right: 2em;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------main-header------------------- */
+    /* ----------------------------------------- */
+    main header h3 {
+        position: relative;
+        left: 1em;
+    }
+
+    main header p, #aboutMe p, #contactMe p {
+        text-indent: 25px;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------projects---------------------- */
+    /* ----------------------------------------- */
+    #projects {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #projects-nav {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    #projects-nav h2 {
+        margin: 0;
+        padding-left: 15px;
+    }
+
+    #projects-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #projects-list li {
+        margin: 0;
+        padding: 0;
+    }
+
+    #projects-list a {
+        margin: 1em;
+        padding: 8px;
+
+    }
+
+    #projects button {
+        margin: 1em;
+    }
+
+    #project-navigation {
+        margin: 0;
+        padding: 0;
+    }
+
+    #project-navigation ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------about-me---------------------- */
+    /* ----------------------------------------- */
+
+    #aboutMe img {
+        margin: 0;
+        padding: 0;
+        height: 278px;
+        width:222px;
+    }
+
+    #aboutMe h2, #contactMe h2 {
+        margin-bottom: .5em;
+    }
+
+    #aboutMe figure {
+        float: right;
+        margin-left: 3em;
+    }
+
+    #skills {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------footer------------------------ */
+    /* ----------------------------------------- */
+    footer {
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        text-align: center;
+    }
+/* } */
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* two columns */
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* one column */
+    /* ----------------------------------------- */
+    /* ----------------contact------------------- */
+    /* ----------------------------------------- */
+    #contact {
+        right: -1%;
+    }
+
+    #contact img {
+        height: 30px;
+        width: 30px;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------main-body-of-page------------- */
+    /* ----------------------------------------- */
+    main {
+        padding-right: 1em;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------projects---------------------- */
+    /* ----------------------------------------- */
+    #projects-nav {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+     #projects-nav h2, #aboutMe h2, #contactMe h2 {
+        margin: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+
+    #projects-list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------about-me---------------------- */
+    /* ----------------------------------------- */
+    #aboutMe .aboutMeDiv {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #aboutMe figure {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    #skills {
+        margin-top: 1em;
+        flex-direction: column;
+        justify-content: none;
+        align-items: left;
+    }
+}

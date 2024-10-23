@@ -1,6 +1,6 @@
 
 /* -HEADER---------------------- */
-header {
+/* header {
     padding: 1em, 2em;
 }
 
@@ -22,10 +22,10 @@ header h3 {
 header h1 {
     margin: 0;
     margin-bottom: .5em;
-}
+} */
 
 /* -PROJECTS------------------- */
-#projects-nav {
+/* #projects-nav {
     display: flex;
     justify-content: space-between;
     margin-top: 3em;
@@ -50,7 +50,7 @@ header h1 {
     flex-direction: column;
 } */
 
-#project-navigation {
+/* #project-navigation {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -60,7 +60,6 @@ header h1 {
 #projects-list a, #contactMe a {
     margin:0;
     padding: .5em 1em;
-    /* border: solid 2pt; */
     border-radius: 10px;
 }
 
@@ -111,4 +110,4 @@ header h1 {
     #aboutMe p {
         padding-right: 3em;
     }
-}
+}  */
