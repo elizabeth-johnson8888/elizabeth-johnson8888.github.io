@@ -15,7 +15,7 @@
   <body>
     <!-- this div represents the navbar, picture on the left things listed on the right -->
     <div id="navigation">
-        <img width="30" height="30">
+        <!-- <img width="30" height="30"> -->
         <ul>
             <li>
                 <a href="#aboutMe">About Me</a>
@@ -69,64 +69,32 @@
                 <ul id="projects-list">
                     <!-- MAKE THESE DROPDOWN BUTTONS -->
                     <li>
-                        <a href="#" onclick="setFilter(1)">Programming</a>
+                        <a href="#" onclick="setFilter('programming')">Programming</a>
                     </li>
                     <li>
-                        <a href="#" onclick="setFilter(2)">Art</a>
+                        <a href="#" onclick="setFilter('art')">Art</a>
                     </li>
                     <li>
-                        <a href="#" onclick="setFilter(0)">All</a>
+                        <a href="#" onclick="setFilter('all')">All</a>
                     </li>
                 </ul>
             </div>
             <!-- container for holding projects that generate with javascript -->
             <!-- originally holds all of the projects from most recent at the top -->
             <div class="projects-list container-fluid">
-                <div class="container">
-                    <div class="row">
-                        <button class="col card btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-explanded="false" aria-controls="collapseExample" style="width: 18rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            </div>
-                        </button>
-                        <button class="col card btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-explanded="false" aria-controls="collapseExample" style="width: 18rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            </div>
-                        </button>
-                        <button class="col card btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-explanded="false" aria-controls="collapseExample" style="width: 18rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                            </div>
-                        </button>
-                        <div class="collapse" id="collapseExample">
-                            <div class="card card-body">
-                                Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                            </div>
-                        </div>
-                    </div>
-                  </div>
-                <!-- use javascript to form the cards when each button is pressed -->
-                <!-- the programming cards will be the titles,texts,and links -->
-                <!-- the art cards will have a picture of the project -->
-                <!-- <div id="first-row" class="row">
+                <div id="projectContainer" class="container">
                 </div>
-                <div id="second-row" class="row">
-                </div> -->
 
                 <!-- Page navigation -->
                 <nav id="project-navigation">
                     <ul class="pagination">
                       <li id="previous-page-item" class="page-item">
-                        <a id="pagination-backward" class="page-link" href="#" aria-label="Previous" onclick="setPaginationBackward()">
+                        <a id="pagination-backward" class="page-link" href="#" aria-label="Previous" onclick="setPagination('backwards')">
                           <span aria-hidden="true">&laquo;</span>
                         </a>
                       </li>
                       <li id="next-page-item" class="page-item">
-                        <a id="pagination-forward" class="page-link" href="#" aria-label="Next" onclick="setPaginationForward()">
+                        <a id="pagination-forward" class="page-link" href="#" aria-label="Next" onclick="setPagination('forwards')">
                           <span aria-hidden="true">&raquo;</span>
                         </a>
                       </li>
@@ -179,10 +147,7 @@
         <div id="contactMe">
             <h2>Contact Me!</h2>
             <div>
-                <p>I am currently looking for job opportunities! I'd love to hear from you to speak about career possibilities! Additionally my inbox is always open for questions or just to say hi! I will do my best to get back to you as soon as I can!</p>
-                <!-- <div id="mail-container">
-                    <a href="mailto:johnsonel8888@gmail.com">Email Me</a>
-                </div> -->
+                <p>I am currently looking for job opportunities! I'd love to hear from you to speak about career possibilities! Additionally my LinkedIn is always open for questions or just to say hi! I will do my best to get back to you as soon as I can!</p>
             </div>
         </div>
     </main>

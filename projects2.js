@@ -1,7 +1,8 @@
-let projectMaster = new Array();
+let projectMaster = new Array(); // [card button, corresponding collapsible]
 let numOfCards; // holds the max number of cards to show on a screen at once
-let filter; // 0 = all, 1 = programming, 2 = art
+let filter;
 let currentIndex;
+let lastCard = new Array();
 
 // loads all projects to the page when the wondow loads
 window.onload = function loadAllProjects()
@@ -17,11 +18,14 @@ window.onload = function loadAllProjects()
             {
                 let card = makeCard(projectMasterList[i]);
                 projectMaster.push(card);
+                console.log(projectMaster.length);
             }
-    }).catch(error => console.error('Error fetching JSON:', error));
-
-    // call resizeCards
+        filter = "all";
+        currentIndex = 0;
+        resizeCards();
+    }).catch(error => console.error('Error fetching JSON:', error));    
 }
+
 
 // function to create the basic card makeCard
 // input card information from JSON file
@@ -95,9 +99,57 @@ function makeCard(cardInfo)
 
 // showCards function to show page of cards using the index and filter variables
 // optional pagination input
-function showCards(pagination = "none")
+function showCards()
 {
-    return 0;
+    if (numOfCards === 1)
+        {
+            // set up page for accordion style cards
+            // delete pagination button because you can just scroll
+        }
+    else // page is large enough to multiple cards and rows
+        {
+            // create divs to hole rows of cards
+            let row1 = document.createElement("div");
+            let row2 = document.createElement("div");
+            row1.classList.add("row");
+            row2.classList.add("row");
+
+            // add divs to page
+            let projectContainer = document.querySelector("#projectContainer");
+            projectContainer.appendChild(row1);
+            projectContainer.appendChild(row2);
+
+            let i = currentIndex;
+            let j = 0;
+
+            while (i < projectMaster.length || j < numOfCards)
+                {
+                    if (j < (numOfCards / 2) && (projectMaster[i][0].classList.contains(filter) || filter === "all"))
+                        {
+                            // put cards in first div
+                            row1.appendChild(projectMaster[i][0]);
+                            row1.appendChild(projectMaster[i][1]);
+                            i = i + 1;
+                            j = j + 1;
+                        }
+                    else if (j >= (numOfCards / 2) && j < numOfCards && (projectMaster[i][0].classList.contains(filter) || filter === "all"))
+                        {
+                            if (j === (numOfCards - 1) && filter != "all") // saves for filter pagination
+                                {
+                                    lastCard.push(i);
+                                }
+                            // put cards in second div
+                            row2.appendChild(projectMaster[i][0]);
+                            row2.appendChild(projectMaster[i][1]);
+                            i = i + 1;
+                            j = j + 1;
+                        }
+                    else
+                        {
+                            i = i + 1;
+                        }
+                }
+        }
 }
 
 
@@ -106,6 +158,9 @@ function showCards(pagination = "none")
 function setFilter(f)
 {
     filter = f;
+    currentIndex = 0;
+    emptyCards();
+    showCards();
 }
 
 
@@ -138,22 +193,82 @@ function resizeCards(isResized = false) {
     else if (window.innerWidth < 767.98)
         {
             // show two columns and two rows of cards
-            numOfCards = 2;
+            numOfCards = 4;
         }
     else
         {
             // show three columns and two rows of cards
-            numOfCards = 4;
+            numOfCards = 6;
         }
-    console.log(numOfCards);
     showCards();
 }
 
 // function for pagination buttons
 // calls showCards with pagination parameter
+// change the current index based on the numOfCards per page
+// deletes current cards from page
+function setPagination(button)
+{
+    emptyCards();
+
+    if ((button === "backwards") && (currentIndex > 0) && filter === "all")
+        {
+            currentIndex = currentIndex - numOfCards;
+        }
+    else if ((button === "backwards") && (currentIndex > 0))
+        {
+            lastCard.pop();
+            lastCard.pop();
+            if (lastCard.length === 0)
+                {
+                    currentIndex = 0;
+                }
+            else
+                {
+                    currentIndex = lastCard[lastCard.length - 1] + 1;
+                }
+        }
+    else if ((button === "forwards") && areThereCardsLeft() && filter === "all")
+        {
+            currentIndex = currentIndex + numOfCards;
+        }
+    else if ((button === "forwards") && areThereCardsLeft())
+        {
+            currentIndex = lastCard[lastCard.length - 1] + 1;
+        }
+    showCards();
+}
 
 
+// checks to see if there are cards left to show depending on the current index and filter
+// returns true if there are cards to show
+// returns false if there are no cards to show
+function areThereCardsLeft()
+{
+    // first, if the filter is all and there are cards left to show return true
+    if (filter === "all" && (currentIndex + numOfCards) < projectMaster.length)
+        {
+            return true;
+        }
+    else if (filter === "all" && (currentIndex + numOfCards) >= projectMaster.length)
+        {
+            return false;
+        }
 
+    for (let i = currentIndex; i < projectMaster.length; i++)
+        {
+            if (filter !== 'all' && projectMaster[i][0].classList.contains(filter))
+                {
+                    return true;
+                }
+        }
+    return false;
+}
 
-
+// enpties the card containers so there is no cards in it
+function emptyCards()
+{
+    let projectContainer = document.querySelector("#projectContainer");
+    projectContainer.innerHTML = '';
+}
 
