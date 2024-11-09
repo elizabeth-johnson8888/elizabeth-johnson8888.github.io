@@ -7,8 +7,8 @@ let lastCard = new Array();
 // loads all projects to the page when the wondow loads
 window.onload = function loadAllProjects()
 {
-    const url = "projectDescriptions.json";
-    // const url='https://elizabeth-johnson8888.github.io/projectDescriptions.json'
+    // const url = "projectDescriptions.json";
+    const url='https://elizabeth-johnson8888.github.io/projectDescriptions.json'
     fetch(url).then((response) => response.text())
     .then((text) => {
         let projectMasterList = JSON.parse(text); // array of themes and colors
