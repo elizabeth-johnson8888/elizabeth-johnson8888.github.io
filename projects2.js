@@ -23,6 +23,7 @@ window.onload = function loadAllProjects()
         filter = "all";
         currentIndex = 0;
         resizeCards();
+        console.log("huh");
     }).catch(error => console.error('Error fetching JSON:', error));    
 }
 
