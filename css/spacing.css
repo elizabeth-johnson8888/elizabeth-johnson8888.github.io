@@ -17,7 +17,8 @@
         padding: 1em;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        /* justify-content: space-between; */
+        justify-content: flex-end;
     }
 
     #navigation ul {
@@ -51,6 +52,7 @@
         padding: 0;
         position: fixed;
         right: 1%;
+        top: 55%;
     }
 
     #contact a {

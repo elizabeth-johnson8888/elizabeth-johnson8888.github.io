@@ -1,8 +1,8 @@
 let projectMaster = new Array(); // [card button, corresponding collapsible]
 let numOfCards; // holds the max number of cards to show on a screen at once
-let filter;
-let currentIndex;
-let lastCard = new Array();
+let filter; // keeps track of current project filter
+let currentIndex; // keepts track of the projectMaster index
+let lastCard = new Array(); // keeps track of the filter index for pagination
 
 // loads all projects to the page when the wondow loads
 window.onload = function loadAllProjects()
