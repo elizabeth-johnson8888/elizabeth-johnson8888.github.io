@@ -7,8 +7,8 @@ let lastCard = new Array(); // keeps track of the filter index for pagination
 // loads all projects to the page when the wondow loads
 window.onload = function loadAllProjects()
 {
-    // const url = "projectDescriptions.json";
-    const url='https://elizabeth-johnson8888.github.io/projectDescriptions.json'
+    const url = "projectDescriptions.json";
+    // const url='https://elizabeth-johnson8888.github.io/projectDescriptions.json'
     fetch(url).then((response) => response.text())
     .then((text) => {
         let projectMasterList = JSON.parse(text); // array of themes and colors
@@ -73,7 +73,7 @@ function makeCard(cardInfo)
     collapse.appendChild(collapseCard);
 
     // add pictures or link depending on if the card is art or programming
-    if (cardInfo["type"] === "programming")
+    if (cardInfo["type"] === "Programming")
         {
             // add link to project collasible
             let link = document.createElement("a");

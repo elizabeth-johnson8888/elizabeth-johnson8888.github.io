@@ -1,6 +1,6 @@
 [
     {
-        "type":"art",
+        "type":"Art",
         "project-id":"lampshade",
         "card-title":"Hand-sewed and beaded lampshade",
         "card-subtitle":"fibers, beads",
@@ -8,7 +8,7 @@
         "project-description":"This beautiful lampshade, crafted by hand, was made December/January 2023-2024. I found the perfect lamp stand, clothing fabric, and wire frame from Goodwill. Drawing inspiration from my observations while watching Ace of Shades, I stripped the lampshade and began the process. I sewed strips of fabric around the wire so each panel would be able to be sewn on. I repurposed fabric from a pillowcase and two shirts to make foundational panels for each section of the frame. Then I adorned the lampshade with delicate lace and intricate beadwork gathered from diverse sources—my personal collection, Joann's, and a local bead store. My finishing touch was the white trim on the top and bottom of the shade, covering all the threads from sewing each part. All that was left was to assemble my lamp!"
     },
     {
-        "type":"art",
+        "type":"Art",
         "project-id":"scorpionBracelet",
         "card-title":"Oragami Metal Scorpion Bracelet",
         "card-subtitle":"Nickel Silver",
@@ -16,7 +16,7 @@
         "project-description":"I took a beginning metal and jewelry class Fall semester 2023, and completed this scorpion bracelet. The bracelet is contructed from 24 gauge silver nickel sheet metal. I constructed the design by expirementing with paper, cutting and folding until I felt I found the best design. I had to saw out my metal, clean up the edges, sand it to remove marks from pliers and other tools I used in the process. Next, I sand-blasted and tumbled the piece to get the shiny, chromy illusion on the metal."
     },
     {
-        "type":"programming",
+        "type":"Programming",
         "project-id":"rocket-backtracking",
         "card-title":"Rocket Backtracking",
         "card-subtitle":"Python",
@@ -24,7 +24,7 @@
         "project-link":"https://github.com/elizabeth-johnson8888/RocketBacktracking.git"
     },
     {
-        "type":"programming",
+        "type":"Programming",
         "project-id":"bullet-journal",
         "card-title":"Bullet Journal Website",
         "card-subtitle":"HTML, CSS, JavaScript, Bootstrap",
@@ -32,7 +32,7 @@
         "project-link":"https://w3stu.cs.jmu.edu/johns5el/cs343/Project/"
     },
     {
-        "type":"programming",
+        "type":"Programming",
         "project-id":"max3sat",
         "card-title":"Max3Sat Exact Solution",
         "card-subtitle":"Python, Shell script",
@@ -40,7 +40,7 @@
         "project-link":"https://github.com/elizabeth-johnson8888/Max3Sat.git"
     },
     {
-        "type":"art",
+        "type":"Art",
         "project-id":"pond-floor",
         "card-title":"Pond Mural on Floor",
         "card-subtitle":"Wall paint, acrylic paint",
@@ -48,7 +48,7 @@
         "project-description":"When my family moved into our house in high school, there was a section of the floor right in the foyer that had not been wood finished, so it was base plywood. I did'nt think it looked to good so I decided to take this problem into my own hands and fix it. I asked my dad if I could paint a mural on the floor, and to my surprise, he said yes! I was inspired by our tiny pond in the backyard, and wanted to bring it inside. I painted the fish first, and then the water around them to make them pop out more, and to look like they're freely swimming in some beautiful water."
     },
     {
-        "type":"art",
+        "type":"Art",
         "project-id":"octopus-box",
         "card-title":"Deep Sea Treasure",
         "card-subtitle":"Paper clay, acrylic paint, 3d printed object, yarn, wood",
@@ -56,7 +56,7 @@
         "project-description":"I took a 3d-desing class at JMU and this was one of the projects. The objective was to make box with a 3d printed object that represented you. I started by making the 3d object. I decided to put an octupus queen on a star throne engulfed in flowers, eating ice cream and surrounded by flames. You see, I love octopi and the ocean, space, flowers, ice cream, and fire. The reason I put made the octopus the octopus queen is because I am the octopus, in charge of my life and queen of me. I built the box in the woodshop before staining it and using acrylic paint to make the outside look more worn. I painted the inside of the box red because that is my favorite color. My professor made paper clay, a medium that I was unfamiliar with. I was curious so I decided to implement it into my project by createing vines that wrapped around my box and held the box and the lid up at different angles. I used wire to support the vines so the box would not crumple down. To add further details, I added smaller yarn roots and painted the clay and yarn to look more wood-like. I made the outside more guarded with a peek inside, because I try to keep myself guarded, but do let people in. I imagine that my box is int he process of falling to the ocean floor, levitating from the water current, but held together by the vines."
     },
     {
-        "type":"art",
+        "type":"Art",
         "project-id":"dotd-painting",
         "card-title":"Great Grandmother",
         "card-subtitle":"acrylic paint",
@@ -64,7 +64,7 @@
         "project-description":"When I was in my painting class I made a friend, Ana Leah, who was putting on a Day of the Dead gallery for latino artists to submit work and have their art shown in SSC. She was having trouble finding artists so she asked me to make a piece for her(I am not latino); I was thrilled. The theme was Life, Death, and memory and at first I was unsure of what to paint. I did some research and found out that in Mexican culture, it is said that the Monarch butterflies are spirits of their ancestors visiting themj again. I think that is beautiful and it reminided me of my Great Grandma, who I was close to when I was young. She told me that after she died, she would visit me as a butterfly. I also found out that people put flowers on the altars for their family members, so I felt that I needed to include some beautiful foliage in my painting. I decided to put her in a beautiful forest full of life. In the background, there is her coffin that is overgrown with soft moss and grass. In the froeground, there is a small monarch butterfly, which represents her visiting me in the physical world."
     },
     {
-        "type":"programming",
+        "type":"Programming",
         "project-id":"homebase-application",
         "card-title":"HomeBase GUI Application",
         "card-subtitle":"Java Swing",
@@ -72,7 +72,7 @@
         "project-link":"https://github.com/elizabeth-johnson8888/HomeBase-Application.git"
     },
     {
-        "type":"programming",
+        "type":"Programming",
         "project-id":"circular-binary",
         "card-title":"Circular Binary Search",
         "card-subtitle":"Python",
@@ -80,7 +80,7 @@
         "project-link":"https://github.com/elizabeth-johnson8888/CircularBinarySearch.git"
     },
     {
-        "type":"programming",
+        "type":"Programming",
         "project-id":"min-heap",
         "card-title":"Minimum Heap lab",
         "card-subtitle":"java",
@@ -88,7 +88,7 @@
         "project-link":"https://github.com/elizabeth-johnson8888/DataStructures/tree/main/MinHeap"
     },
     {
-        "type":"art",
+        "type":"Art",
         "project-id":"octopus-cabinet",
         "card-title":"Hand-painted Octopus Cabinet",
         "card-subtitle":"Acrylic Paint",

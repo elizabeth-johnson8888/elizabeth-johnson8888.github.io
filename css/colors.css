@@ -28,3 +28,12 @@ p, a, li, hr, h5, h6, h4, div, a.btn {
 .page-link {
     border-color: var(--dark)
 }
+
+.dark-btn {
+    pointer-events: auto;
+}
+
+.dark-btn:hover {
+    background-color: var(--small-text) !important;
+    color: var(--dark) !important;
+}
