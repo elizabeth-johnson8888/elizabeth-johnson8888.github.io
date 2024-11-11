@@ -18,12 +18,10 @@ window.onload = function loadAllProjects()
             {
                 let card = makeCard(projectMasterList[i]);
                 projectMaster.push(card);
-                console.log(projectMaster.length);
             }
         filter = "all";
         currentIndex = 0;
         resizeCards();
-        console.log("huh");
     }).catch(error => console.error('Error fetching JSON:', error));    
 }
 
@@ -178,7 +176,6 @@ window.addEventListener('resize', function() {
 // calls showCards and sets numOfCards
 // optional parameter for if the screen has been resized
 function resizeCards(isResized = false) {
-    console.log("resize");
     // if the screen was resized, set currentIndex to 0
     if (isResized === true)
         {
@@ -256,7 +253,8 @@ function areThereCardsLeft()
             return false;
         }
 
-    for (let i = currentIndex; i < projectMaster.length; i++)
+    // check if there are more cards based on the filter
+    for (let i = lastCard[lastCard.length - 1] + 1; i < projectMaster.length; i++)
         {
             if (filter !== 'all' && projectMaster[i][0].classList.contains(filter))
                 {
