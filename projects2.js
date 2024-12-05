@@ -19,7 +19,7 @@ window.onload = function loadAllProjects()
                 let card = makeCard(projectMasterList[i]);
                 projectMaster.push(card);
             }
-        filter = "all";
+        filter = "All";
         currentIndex = 0;
         resizeCards();
     }).catch(error => console.error('Error fetching JSON:', error));    
@@ -36,7 +36,7 @@ function makeCard(cardInfo)
     // projectID is used for collapsible
     let projectID = "#" + cardInfo["project-id"];
 
-    // create the button that holds the card
+    // // create the button that holds the card
     let cardButton = document.createElement("button");
     cardButton.classList.add("col", "card", "btn", cardInfo["type"]); // add type of card as a class
     cardButton.setAttribute("type", "button");
@@ -53,7 +53,7 @@ function makeCard(cardInfo)
     cardTitle.classList.add("card-title");
     cardTitle.textContent = cardInfo["card-title"];
     let cardSubtitle = document.createElement("h6");
-    cardSubtitle.classList.add("card-subtitle", "mb-2", "text-body-secondary");
+    cardSubtitle.classList.add("card-subtitle");
     cardSubtitle.textContent = cardInfo["type"];
     cardBody.appendChild(cardTitle);
     cardBody.appendChild(cardSubtitle);
@@ -123,7 +123,7 @@ function showCards()
 
             while (i < projectMaster.length || j < numOfCards)
                 {
-                    if (j < (numOfCards / 2) && (projectMaster[i][0].classList.contains(filter) || filter === "all"))
+                    if (j < (numOfCards / 2) && (projectMaster[i][0].classList.contains(filter) || filter === "All"))
                         {
                             // put cards in first div
                             row1.appendChild(projectMaster[i][0]);
@@ -131,9 +131,9 @@ function showCards()
                             i = i + 1;
                             j = j + 1;
                         }
-                    else if (j >= (numOfCards / 2) && j < numOfCards && (projectMaster[i][0].classList.contains(filter) || filter === "all"))
+                    else if (j >= (numOfCards / 2) && j < numOfCards && (projectMaster[i][0].classList.contains(filter) || filter === "All"))
                         {
-                            if (j === (numOfCards - 1) && filter != "all") // saves for filter pagination
+                            if (j === (numOfCards - 1) && filter != "All") // saves for filter pagination
                                 {
                                     lastCard.push(i);
                                 }
@@ -156,7 +156,12 @@ function showCards()
 // sets filter variable to filter
 function setFilter(f)
 {
+    // remove the light buttom from previous filter
+    document.querySelector(`#${filter}`).classList.remove("light-btn");
+    // save the newly selected filter
     filter = f;
+    // make the new filter button light
+    document.querySelector(`#${filter}`).classList.add("light-btn");
     currentIndex = 0;
     emptyCards();
     showCards();
@@ -209,7 +214,7 @@ function setPagination(button)
 {
     emptyCards();
 
-    if ((button === "backwards") && (currentIndex > 0) && filter === "all")
+    if ((button === "backwards") && (currentIndex > 0) && filter === "All")
         {
             currentIndex = currentIndex - numOfCards;
         }
@@ -226,7 +231,7 @@ function setPagination(button)
                     currentIndex = lastCard[lastCard.length - 1] + 1;
                 }
         }
-    else if ((button === "forwards") && areThereCardsLeft() && filter === "all")
+    else if ((button === "forwards") && areThereCardsLeft() && filter === "All")
         {
             currentIndex = currentIndex + numOfCards;
         }
@@ -244,11 +249,11 @@ function setPagination(button)
 function areThereCardsLeft()
 {
     // first, if the filter is all and there are cards left to show return true
-    if (filter === "all" && (currentIndex + numOfCards) < projectMaster.length)
+    if (filter === "All" && (currentIndex + numOfCards) < projectMaster.length)
         {
             return true;
         }
-    else if (filter === "all" && (currentIndex + numOfCards) >= projectMaster.length)
+    else if (filter === "All" && (currentIndex + numOfCards) >= projectMaster.length)
         {
             return false;
         }
@@ -256,7 +261,7 @@ function areThereCardsLeft()
     // check if there are more cards based on the filter
     for (let i = lastCard[lastCard.length - 1] + 1; i < projectMaster.length; i++)
         {
-            if (filter !== 'all' && projectMaster[i][0].classList.contains(filter))
+            if (filter !== 'All' && projectMaster[i][0].classList.contains(filter))
                 {
                     return true;
                 }

@@ -153,6 +153,27 @@
         flex-direction: row;
         justify-content: center;
     }
+    
+    .card-body {
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-title, .card-subtitle, button.Art, button.Programming {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .collapse {
+        margin-bottom: 1em;
+    }
 
     /* ----------------------------------------- */
     /* -----------about-me---------------------- */

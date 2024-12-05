@@ -21,7 +21,7 @@ p, a, li, hr, h5, h6, h4, div, a.btn {
     color: var(--small-text)
 }
 
-#projects-nav a, #contactMe a, .card, .page-link {
+.filter-btn, .card, .page-link {
     background-color: var(--dark);
 }
 
@@ -34,6 +34,15 @@ p, a, li, hr, h5, h6, h4, div, a.btn {
 }
 
 .dark-btn:hover {
-    background-color: var(--small-text) !important;
-    color: var(--dark) !important;
+    background-color: var(--small-text);
+    color: var(--dark);
+}
+
+.light-btn {
+    pointer-events: none;
+}
+
+a.light-btn {
+    background-color: var(--small-text);
+    color: var(--dark);
 }

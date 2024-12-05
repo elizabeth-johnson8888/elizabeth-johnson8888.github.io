@@ -27,7 +27,7 @@
                 <a class="btn dark-btn" href="#contactMe">Contact</a>
             </li>
             <li>
-                <a class="btn dark-btn" href="resources\Elizabeth-Johnson-Cloud-resume.pdf">Resume</a>
+                <a class="btn dark-btn" href="resources\resume2.pdf">Resume</a>
             </li>
         </ul>
     </div>
@@ -69,20 +69,20 @@
                 <ul id="projects-list">
                     <!-- MAKE THESE DROPDOWN BUTTONS -->
                     <li>
-                        <a class="btn dark-btn" href="#" onclick="setFilter('Programming')">Programming</a>
+                        <a id="Programming" class="btn filter-btn dark-btn" href="#" onclick="setFilter('Programming')">Programming</a>
                     </li>
                     <li>
-                        <a class="btn dark-btn" href="#" onclick="setFilter('Art')">Art</a>
+                        <a id="Art" class="btn filter-btn dark-btn" href="#" onclick="setFilter('Art')">Art</a>
                     </li>
                     <li>
-                        <a class="btn dark-btn" href="#" onclick="setFilter('all')">All</a>
+                        <a id="All" class="btn filter-btn dark-btn light-btn" href="#" onclick="setFilter('All')">All</a>
                     </li>
                 </ul>
             </div>
             <!-- container for holding projects that generate with javascript -->
             <!-- originally holds all of the projects from most recent at the top -->
             <div class="projects-list container-fluid">
-                <div id="projectContainer" class="container">
+                <div id="projectContainer" class="container accordion">
                 </div>
 
                 <!-- Page navigation -->
