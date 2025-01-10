@@ -220,11 +220,51 @@
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    /* -----------------------------------------
+    /* -----------Header---------------------- */
+    /* ----------------------------------------- */
+    header img {
+        width:240px;
+    }
+
+    #header-top {
+        display: flex;
+    }
+
+    header h3 {
+        font-size: 200%;
+    }
+
+    header h1 {
+        font-size: 240%;
+        position: relative;
+        left: 50px;
+    }
+    
 }
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* two columns */
+    /* -----------------------------------------
+    /* -----------Header---------------------- */
+    /* ----------------------------------------- */
+    header img {
+        width:250px;
+    }
+
+    #header-top {
+        display: flex;
+    }
+
+    header h3 {
+        font-size: 140%;
+    }
+
+    header h1 {
+        font-size: 160%;
+        position: relative;
+        left: 50px;
+    }
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -247,6 +287,24 @@
     /* ----------------------------------------- */
     main {
         padding-right: 1em;
+    }
+
+    /* -----------------------------------------
+    /* -----------Header---------------------- */
+    /* ----------------------------------------- */
+    header img {
+        width:350px;
+    }
+
+    #header-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    header h1 {
+        position: relative;
+        left: 0;
     }
 
     /* ----------------------------------------- */
