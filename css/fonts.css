@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'TitleFont'; /* Name your font family */
+    src: url('../resources/ComputerPixel7-mnL2.ttf'); /* Locate the .ttf file within your directory*/
+  }
+  
+  h1, h2, h3, p, a, button, li {
+    font-family: 'TitleFont', sans-serif; /* Use the font family */
+    font-weight: normal;
+    font-style: normal;
+  }

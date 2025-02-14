@@ -9,6 +9,14 @@
         text-decoration: none;
     }
 
+    p, li, button, h5, h6 {
+        font-size: 150%;
+    }
+
+    a.btn-size {
+        font-size: 100%;
+    }
+
     /* ----------------------------------------- */
     /* ----------------navbar------------------- */
     /* ----------------------------------------- */
@@ -17,8 +25,16 @@
         padding: 0;
         display: flex;
         flex-direction: row;
-        /* justify-content: space-between; */
-        justify-content: flex-end;
+        justify-content: space-between;
+    }
+
+    #navigation img {
+        margin: 1em;
+        position: relative;
+        margin-left: 1em;
+        margin-top: 1em;
+        width: 30px; 
+        height: 30px;
     }
 
     #navigation ul {
@@ -40,8 +56,17 @@
     }
 
     #navigation a {
-        margin: .5em;;
-        padding: 8px;
+        margin: .25em;
+        /* padding: 8px; */
+    }
+
+    .border-div {
+        height: 25px;
+        width: 100vw;
+        background-image: url('../resources/images/scalloped_border.png'); 
+        background-repeat: repeat-x;
+        background-size: auto;
+        margin-bottom: 5em;
     }
 
     /* ----------------------------------------- */
@@ -85,9 +110,11 @@
     /* ----------------------------------------- */
     /* -----------main-header------------------- */
     /* ----------------------------------------- */
-    main header h3 {
+
+    header h3 {
         position: relative;
         left: 1em;
+        font-size: 300%;
     }
 
     main header p, #aboutMe p, #contactMe p {
@@ -95,6 +122,34 @@
         margin: 0;
         padding: 0;
         text-align: left;
+    }
+
+    header {
+        margin-right: 2em;
+    }
+
+    header img {
+        width: 50%;
+    }
+
+    #header-top {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+
+    header h1 {
+        font-size: 450%;
+        position: relative;
+        left: 50px;
+    }
+
+    header .picture-frame {
+        margin: 1em;
+        display: inline-block;
+        padding: 20px;
+        border: 100px solid transparent;
+        border-image: url('../resources/images/pictureframe1_large.png') 150 round; /* The PNG image for the picture frame */
     }
 
     /* ----------------------------------------- */
@@ -183,7 +238,14 @@
         margin: 0;
         padding: 0;
         height: 278px;
-        width:222px;
+    }
+
+    #aboutMe .picture-frame {
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        border: 40px solid transparent;
+        border-image: url('../resources/images/pictureframe1_large.png') 90 round; 
     }
 
     #aboutMe h2, #contactMe h2 {
@@ -193,6 +255,8 @@
     #aboutMe figure {
         float: right;
         margin-left: 3em;
+        position: relative;
+        bottom: 1em;
     }
 
     #skills {
@@ -216,7 +280,7 @@
     footer p {
         text-align: center;
     }
-/* } */
+
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
@@ -224,7 +288,7 @@
     /* -----------Header---------------------- */
     /* ----------------------------------------- */
     header img {
-        width:240px;
+        width:300px;
     }
 
     #header-top {
@@ -232,11 +296,11 @@
     }
 
     header h3 {
-        font-size: 200%;
+        font-size: 250%;
     }
 
     header h1 {
-        font-size: 240%;
+        font-size: 350%;
         position: relative;
         left: 50px;
     }
@@ -257,11 +321,11 @@
     }
 
     header h3 {
-        font-size: 140%;
+        font-size: 200%;
     }
 
     header h1 {
-        font-size: 160%;
+        font-size: 300%;
         position: relative;
         left: 50px;
     }
@@ -269,6 +333,24 @@
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    /* ----------------------------------------- */
+    /* -----------header---------------------- */
+    /* ----------------------------------------- */
+    #header-top img {
+        margin-bottom: 3em;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------navigation---------------------- */
+    /* ----------------------------------------- */
+    #navigation img {
+        display: none;
+    }
+
+    #navigation {
+        justify-content: flex-end;
+    }
+
     /* one column */
     /* ----------------------------------------- */
     /* ----------------contact------------------- */
