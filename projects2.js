@@ -13,7 +13,7 @@ window.onload = function loadAllProjects()
     .then((text) => {
         let projectMasterList = JSON.parse(text); // array of themes and colors
 
-        // for each project, make a card and collapsible if applicable
+        // for each project, make a card and collapsible
         for (let i = 0; i < projectMasterList.length; i++)
             {
                 let card = makeCard(projectMasterList[i]);
