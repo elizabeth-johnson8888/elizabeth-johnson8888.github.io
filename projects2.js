@@ -100,10 +100,41 @@ function makeCard(cardInfo)
 // optional pagination input
 function showCards()
 {
+    console.log(numOfCards);
     if (numOfCards === 1)
-        {
-            // set up page for accordion style cards
-            // delete pagination button because you can just scroll
+        {   
+            // create div to hold row of cards
+            let row1 = document.createElement("div");
+            row1.classList.add("row");
+
+            // add divs to page
+            let projectContainer = document.querySelector("#projectContainer");
+            projectContainer.appendChild(row1);
+
+            let i = currentIndex;
+            j = 0;
+
+            while (i < projectMaster.length && j < numOfCards)
+                {
+                    if (j < numOfCards && projectMaster[i][0].classList.contains(filter) || filter === "All")
+                        {
+                            // put card on page
+                            row1.appendChild(projectMaster[i][0]);
+                            row1.appendChild(projectMaster[i][1]);
+
+                            if (filter != "All") // saves for filter pagination
+                                {
+                                    lastCard.push(i);
+                                }
+
+                            i = i + 1;
+                            j = j + 1;
+                        }
+                    else
+                        {
+                            i = i + 1;
+                        }
+                }
         }
     else // page is large enough to multiple cards and rows
         {
@@ -171,9 +202,9 @@ function setFilter(f)
 // function to recognize when the screen changes
 // resets to first set of cards for page resize
 // calls resizeCards
-// window.addEventListener('resize', resizeCards(true));
 // window.onresize = resizeCards(true);
 window.addEventListener('resize', function() {
+    emptyCards();
     resizeCards(true);
 });
 
