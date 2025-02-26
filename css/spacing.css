@@ -17,7 +17,6 @@
         padding: 0;
         display: flex;
         flex-direction: row;
-        /* justify-content: space-between; */
         justify-content: flex-end;
     }
 
@@ -42,6 +41,7 @@
     #navigation a {
         margin: .5em;;
         padding: 8px;
+        font-size: 125%;
     }
 
     /* ----------------------------------------- */
@@ -88,9 +88,36 @@
     main header h3 {
         position: relative;
         left: 1em;
+        font-size: 4em;
     }
 
-    main header p, #aboutMe p, #contactMe p {
+    main header h1 {
+        font-size: 5em;
+        padding: 0;
+        margin: 0;
+        position: relative;
+        bottom: 1em;
+    }
+
+    header div {
+        position: relative;
+        margin: 0;
+        margin-top: 4em;
+        margin-left: 2em;
+    }
+
+    main header p {
+        font-size: 150%;
+        position: relative;
+        margin: 0;
+        margin-top: 1em;
+        text-indent: 25px;
+        padding: 0 1em;
+        text-align: left;
+        bottom: 2.5em;
+    }
+
+    #aboutMe p, #contactMe p {
         text-indent: 25px;
         margin: 0;
         padding: 0;
@@ -220,16 +247,66 @@
 
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+    /* ----------------------------------------- */
+    /* -----------main-header------------------- */
+    /* ----------------------------------------- */
+    main header h3 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    main header h1 {
+        font-size: 4em;
+    }
+
+    main header p {
+        font-size: 135%;
+    }
+
+    header div {
+        margin-top: 2.5em;
+    }
 }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* two columns */
+@media (max-width: 768.98px) {
+    /* ----------------------------------------- */
+    /* ----------------navbar------------------- */
+    /* ----------------------------------------- */
+    #navigation ul {
+        right: 2em;
+    }
+
+    #navigation a {
+        margin: .5em;;
+        padding: 8px;
+        font-size: 100%;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------main-header------------------- */
+    /* ----------------------------------------- */
+    main header h3 {
+        font-size: 2em;
+        margin-bottom: 1.5em;
+    }
+
+    main header h1 {
+        font-size: 3em;
+    }
+
+    main header p {
+        font-size: 120%;
+        margin-top: 1.5em;
+    }
+
+    header div {
+        margin-top: 2.5em;
+    }
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    /* one column */
     /* ----------------------------------------- */
     /* ----------------contact------------------- */
     /* ----------------------------------------- */
@@ -240,6 +317,21 @@
     #contact img {
         height: 30px;
         width: 30px;
+    }
+
+    /* ----------------------------------------- */
+    /* -----------main-header------------------- */
+    /* ----------------------------------------- */
+    main header h3 {
+        font-size: 1.75em;
+    }
+
+    main header h1 {
+        font-size: 2.5em;
+    }
+
+    main header p {
+        font-size: 110%;
     }
 
     /* ----------------------------------------- */
