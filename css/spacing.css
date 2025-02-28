@@ -9,6 +9,14 @@
         text-decoration: none;
     }
 
+    p:not(footer p), #skills li, a, #projects-nav a, h5, h6 { 
+        font-size: 150%;
+    }
+
+    h2 {
+        font-size: 2.5em;
+    }
+
     /* ----------------------------------------- */
     /* ----------------navbar------------------- */
     /* ----------------------------------------- */
@@ -73,7 +81,7 @@
     main {
         margin-top: 2em;
         margin-left: 3em;
-        margin-right: 3em;
+        margin-right: 3.5em;
         margin-bottom: 3em;
         padding: 0;
         padding-right: 2em;
@@ -107,7 +115,7 @@
     }
 
     main header p {
-        font-size: 150%;
+        /* font-size: 150%; */
         position: relative;
         margin: 0;
         margin-top: 1em;
@@ -202,6 +210,11 @@
         margin-bottom: 1em;
     }
 
+    h6.card-subtitle {
+        margin-top: .5rem;
+    }
+
+
     /* ----------------------------------------- */
     /* -----------about-me---------------------- */
     /* ----------------------------------------- */
@@ -259,7 +272,8 @@
         font-size: 4em;
     }
 
-    main header p {
+    /* main header p { */
+    p:not(footer p), #skills li, a, #projects-nav a, h5, h6 { 
         font-size: 135%;
     }
 
@@ -270,6 +284,10 @@
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 768.98px) {
+    h2 {
+        font-size: 2.25em;
+    }
+
     /* ----------------------------------------- */
     /* ----------------navbar------------------- */
     /* ----------------------------------------- */
@@ -295,13 +313,23 @@
         font-size: 3em;
     }
 
-    main header p {
+    /* main header p { */
+    p:not(footer p), #skills li, a, #projects-nav a, h5, h6 { 
         font-size: 120%;
         margin-top: 1.5em;
     }
 
     header div {
         margin-top: 2.5em;
+    }
+
+
+    /* ----------------------------------------- */
+    /* -----------about-me---------------------- */
+    /* ----------------------------------------- */
+
+    #skills li {
+        margin: 0;
     }
 }
 
@@ -330,7 +358,8 @@
         font-size: 2.5em;
     }
 
-    main header p {
+    /* main header p { */
+    p:not(footer p), #skills li, a, #projects-nav a, h5, h6 { 
         font-size: 110%;
     }
 

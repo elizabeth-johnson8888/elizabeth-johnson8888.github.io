@@ -44,7 +44,7 @@ function makeCard(cardInfo)
     cardButton.setAttribute("data-bs-target", projectID);
     cardButton.setAttribute("aria-expanded", "false");
     cardButton.setAttribute("aria-controls", projectID.slice(1));
-    cardButton.setAttribute("style", "width: 18rem;");
+    // cardButton.setAttribute("style", "width: 18rem;");
 
     // create card
     let cardBody = document.createElement("div");
