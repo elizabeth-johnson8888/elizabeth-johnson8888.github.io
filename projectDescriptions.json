@@ -1,5 +1,13 @@
 [
     {
+        "type":"Programming",
+        "project-id":"partTimePaycheck",
+        "card-title":"Part Time Paycheck Calculator",
+        "card-subtitle":"Python",
+        "project-description":"The \"Part Time Paycheck Calculator\" program is a simple Python-based application designed to help users calculate their post-tax pay for a two-week period. The program prompts the user for information, such as gross income, and uses loops to ensure valid input. Built using Python and Visual Studio Code, the app runs in the command line and is easy to use with straightforward instructions for installation and execution. However, it does not calculate federal income tax. The program's time complexity is O(n), primarily due to the user input loops. For anyone looking to better estimate their paycheck after taxes, this tool provides an efficient solution.",
+        "project-link":"https://github.com/elizabeth-johnson8888/VA-part-time-pay"
+    },
+    {
         "type":"Art",
         "project-id":"lampshade",
         "card-title":"Hand-Sewed and Beaded Lampshade",
@@ -35,7 +43,7 @@
         "type":"Programming",
         "project-id":"max3sat",
         "card-title":"Max3Sat Exact Solution",
-        "card-subtitle":"Python, Shell script",
+        "card-subtitle":"Python, Shell Script",
         "project-description":"Max3Sat is a classic NP-complete problem within the realm of computational complexity. The objective of Max3Sat is to obtain the maximum count of clauses that yield a true evaluation. Each clause is written in CNF notation and each variable can be affirmed or negated. In my problem, I was given the number of variables, the number of clauses in one line, and each clause on separate input lines. Using the Brute Force algorithm, I explored all possible truth assignments for each variable and evaluated the expression. Following each evaluation, I compared the previous maximum truth count with the evaluated truth count to get the maximum number of true clauses. The algorithm prints the maximum number of clauses that are evaluated to true and the truth values that are associated with each variable. Consequently, this algorithm operates in exponential time.",
         "project-link":"https://github.com/elizabeth-johnson8888/Max3Sat.git"
     },
@@ -43,7 +51,7 @@
         "type":"Art",
         "project-id":"pond-floor",
         "card-title":"Pond Mural on Floor",
-        "card-subtitle":"Wall paint, acrylic paint",
+        "card-subtitle":"Wall paint, Acrylic paint",
         "collapse-images": [["resources/images/floor_mural.JPG", "262px", "349px"]],
         "project-description":"When my family moved into our house in high school, there was a section of the floor right in the foyer that had not been wood finished, so it was base plywood. I didn't think it looked to good so I decided to take this problem into my own hands and fix it. I asked my dad if I could paint a mural on the floor, and to my surprise, he said yes! I was inspired by our tiny pond in the backyard, and wanted to bring it inside. I painted the fish first, and then the water around them to make them pop out more, and to look like they're freely swimming in some beautiful water."
     },
@@ -51,7 +59,7 @@
         "type":"Art",
         "project-id":"octopus-box",
         "card-title":"Deep Sea Treasure",
-        "card-subtitle":"Paper clay, acrylic paint, 3d printed object, yarn, wood",
+        "card-subtitle":"Paper clay, Acrylic paint, 3d Printed Object, Yarn, Wood",
         "collapse-images": [["resources/images/octopus_box.JPG", "349px", "262px"]],
         "project-description":"I took a 3d-designing class at JMU and this was one of the projects. The objective was to make box with a 3d printed object that represented you. I started by making the 3d object. I decided to put an octopus queen on a star throne engulfed in flowers, eating ice cream and surrounded by flames. You see, I love octopi and the ocean, space, flowers, ice cream, and fire. The reason I put made the octopus the octopus queen is because I am the octopus, in charge of my life and queen of me. I built the box in the woodshop before staining it and using acrylic paint to make the outside look more worn. I painted the inside of the box red because that is my favorite color. My professor made paper clay, a medium that I was unfamiliar with. I was curious so I decided to implement it into my project by creating vines that wrapped around my box and held the box and the lid up at different angles. I used wire to support the vines so the box would not crumple down. To add further details, I added smaller yarn roots and painted the clay and yarn to look more wood-like. I made the outside more guarded with a peek inside, because I try to keep myself guarded, but do let people in. I imagine that my box is int he process of falling to the ocean floor, levitating from the water current, but held together by the vines."
     },
@@ -59,7 +67,7 @@
         "type":"Art",
         "project-id":"dotd-painting",
         "card-title":"Great Grandmother",
-        "card-subtitle":"acrylic paint",
+        "card-subtitle":"Acrylic paint",
         "collapse-images": [["resources/images/dotd_painting.jpg", "262px", "349px"]],
         "project-description":"When I was in my painting class I made a friend, Ana Leah, who was putting on a Day of the Dead gallery for Latino artists to submit work and have their art shown in SSC. She was having trouble finding artists so she asked me to make a piece for her(I am not Latino); I was thrilled. The theme was Life, Death, and Memory. At first I was unsure of what to paint. I did some research and found out that in Mexican culture, it is said that the Monarch Butterflies are spirits of their ancestors visiting them again. I think that is beautiful and it reminded me of my Great Grandma, who I was close to when I was young. She told me that after she died, she would visit me as a butterfly. I also found out that people put flowers on the altars for their family members, so I felt that I needed to include some beautiful foliage in my painting. I decided to put her in a beautiful forest full of life. In the background, there is her coffin that is overgrown with soft moss and grass. In the foreground, there is a small monarch butterfly, which represents her visiting me in the physical world."
     },
@@ -82,8 +90,8 @@
     {
         "type":"Programming",
         "project-id":"min-heap",
-        "card-title":"Minimum Heap lab",
-        "card-subtitle":"java",
+        "card-title":"Minimum Heap Lab",
+        "card-subtitle":"Java",
         "project-description":"This was a lab completed for a Data Structures course at James Madison University. The objective was to create a wroking minimum heap from scratch to better understand the mechanics behind the data structure.",
         "project-link":"https://github.com/elizabeth-johnson8888/DataStructures/tree/main/MinHeap"
     },
