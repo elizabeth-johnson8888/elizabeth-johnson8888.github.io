@@ -347,6 +347,20 @@
         width: 30px;
     }
 
+    #contact-links {
+        margin: 5em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .link-label {
+        font-size: large !important;
+    }
+
+    .link {
+        margin-left: 3em;
+    } */
+
     /* ----------------------------------------- */
     /* -----------main-header------------------- */
     /* ----------------------------------------- */
