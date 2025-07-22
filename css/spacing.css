@@ -75,6 +75,12 @@
         width: 40px;
     }
 
+    #contactLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
     /* ----------------------------------------- */
     /* -----------main-body-of-page------------- */
     /* ----------------------------------------- */
@@ -345,12 +351,6 @@
     #contact img {
         height: 30px;
         width: 30px;
-    }
-
-    #contactLink {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
     }
 
     /* ----------------------------------------- */
