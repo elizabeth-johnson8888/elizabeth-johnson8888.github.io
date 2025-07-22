@@ -70,7 +70,7 @@
         padding: 0em;
     }
 
-    #contact img {
+    #contact img, #contactLink a img {
         height: 40px;
         width: 40px;
     }
@@ -342,24 +342,16 @@
         right: -1%;
     }
 
-    #contact img {
+    #contact img , #contactLink a img{
         height: 30px;
         width: 30px;
     }
 
-    #contact-links {
+    #contactLink {
         margin: 5em;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
-
-    /* .link-label {
-        font-size: large !important;
-    }
-
-    .link {
-        margin-left: 3em;
-    } */
 
     /* ----------------------------------------- */
     /* -----------main-header------------------- */
