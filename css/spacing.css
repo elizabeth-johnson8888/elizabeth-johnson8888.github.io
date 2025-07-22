@@ -342,15 +342,15 @@
         right: -1%;
     }
 
-    #contact img , #contactLink a img{
+    #contact img {
         height: 30px;
         width: 30px;
     }
 
     #contactLink {
-        margin: 5em;
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
 
     /* ----------------------------------------- */
